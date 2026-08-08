@@ -23,7 +23,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', to: '/' },
-    { name: 'Office Bearers', to: '/office-bearers' },
+    { name: 'Office Bearers and Members', to: '/office-bearers' },
     { name: 'Wings', to: '/wings' },
     { name: 'Activities & Events', to: '/activities' },
     { name: 'Podcasts', to: '/podcasts' },

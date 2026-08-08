@@ -10,14 +10,17 @@ const contacts = [
     email: 'shanmukhan@rvce.edu.in',
   },
   {
-    name: 'Prathik P Kekare',
+    name: 'Kavin Krishnan C',
     role: 'President',
-    email: 'prathikpkekare.ec23@rvce.edu.in',
+    email: 'kavinkrishnanc.cs24@rvce.edu.in',
   },
+
+  
+  
   {
-    name: 'R Sunidhi',
+    name: 'Parinitha M',
     role: 'Secretary',
-    email: 'rsunidhi.ec23@rvce.edu.in',
+    email: 'parinitham.cs24@rvce.edu.in',
   },
 ];
 
@@ -64,7 +67,7 @@ const ContactUs = () => {
 
           <Reveal delay={0.3}>
             <div className="text-center mb-12 bg-white rounded-2xl p-8 shadow-sm border border-slate-100 max-w-md mx-auto">
-              <h4 className="text-base font-bold text-sparkBlue mb-2">Contact us at our email ID:</h4>
+              <h4 className="text-base font-bold text-sparkBlue mb-2">Contact us at:</h4>
               <a href="mailto:spark.iucee@rvce.edu.in" className="text-sparkAccent font-bold text-lg hover:underline">
                 spark.iucee@rvce.edu.in
               </a>
