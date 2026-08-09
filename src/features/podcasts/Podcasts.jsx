@@ -66,7 +66,7 @@ const podcastEpisodes = [
     id: 'C6',
     title: `“ಮಾತಿನ ನಾದ: ಕನ್ನಡದ ಹಾದಿ”   ಪ್ರತಿ ಮಾತು — ಒಂದು ಪಯಣ, ಒಂದು ಪ್ರೇರಣೆ`,
     url: "https://youtu.be/ubsZVTZyM1Y?si=hWY592ca2xm5Go5O",
-    description: "A soulful glimpse into our college’s Kannada Sangha — celebrating Kannada as more than a language, but as our identity, culture, and pride. ❤️ From literature to folk traditions, discover how the Sangha keeps the spirit of Namma Kannada alive by blending tradition, creativity, and the energy of today’s youth."
+    description: "A soulful glimpse into our college’s Kannada Sangha — celebrating Kannada as more than a language, but as our identity, culture, and pride. From literature to folk traditions, discover how the Sangha keeps the spirit of Namma Kannada alive by blending tradition, creativity, and the energy of today’s youth."
   }
 ];
 
