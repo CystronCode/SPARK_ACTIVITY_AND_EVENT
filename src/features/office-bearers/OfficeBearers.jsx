@@ -28,7 +28,7 @@ const facultyAdvisors = [
     linkedin: 'https://www.linkedin.com/',
   },
   {
-    name: 'Dr. Shanmukha Nagaraj',
+    name: 'Dr. Shanmukha N',
     role: 'Faculty Advisor',
     designation: 'Head of Department, Mechanical Engineering',
     photo: '/images/dean.jpg',
@@ -41,7 +41,7 @@ const facultyAdvisors = [
 const facultyCoordinator = {
   name: 'Dr. Prapulla S B',
   role: 'Faculty Coordinator',
-  designation: 'Assistant Professor, Computer science and Enginnering ',
+  designation: 'Associate Professor, Computer science and Enginnering ',
   photo: '/images/psb.jpg',
   email: 'prapullasb@rvce.edu.in',
   linkedin: 'https://www.linkedin.com/',

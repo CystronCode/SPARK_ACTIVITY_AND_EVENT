@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 /* ───────────────────────────────────────────────
    Typewriter effect
@@ -45,8 +46,21 @@ const Typewriter = () => {
    Hero Section
 ─────────────────────────────────────────────── */
 const Hero = () => {
-  const images = ["/img1.jpg", "/img2.jpg", "/img3.jpg", "/img4.jpg"];
-  const marqueeImages = [...images, ...images, ...images, ...images];
+  const images = [
+    '/images/events/2.1.jpg',
+    '/images/events/3.2.jpg',
+    '/images/events/5.1.jpg',
+    '/images/events/7.1.jpg',
+    '/images/events/7.2.jpg',
+    '/images/events/11.1.jpg',
+    '/images/events/11.2.jpg',
+    '/images/events/11.3.jpg',
+    '/images/events/13.2.jpg',
+    '/images/events/14.1.jpeg',
+    '/images/events/14.2.jpeg',
+    '/images/events/14.3.jpeg',
+  ];
+  const marqueeImages = [...images, ...images];
 
   return (
     <section
@@ -122,12 +136,12 @@ const Hero = () => {
           >
             Discover Our Wings
           </a>
-          <a
-            href="#events"
+          <Link
+            to="/activities"
             className="px-8 py-4 bg-white/8 hover:bg-white/15 backdrop-blur-md border border-white/25 text-white font-bold rounded-xl transition-all duration-200 hover:-translate-y-1 text-base tracking-wide"
           >
             Explore Events
-          </a>
+          </Link>
         </motion.div>
       </div>
 

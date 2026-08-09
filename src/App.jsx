@@ -12,6 +12,8 @@ import Projects from './features/projects/Projects';
 import ContactUs from './features/contact-us/ContactUs';
 import Credits from './features/credits/Credits';
 
+import ScrollToTopButton from './components/ScrollToTopButton';
+
 // Scroll to top helper on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -50,6 +52,7 @@ function AppContent() {
             <Route path="/credits" element={<Credits />} />
           </Routes>
         </main>
+        <ScrollToTopButton />
       </div>
     </div>
   );

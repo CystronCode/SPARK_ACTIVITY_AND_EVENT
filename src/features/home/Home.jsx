@@ -1,13 +1,17 @@
 import React from 'react';
 import Hero from './Hero';
-import BentoGrid from './BentoGrid';
+import { IdentitySection, WingsSection } from './BentoGrid';
+import { AboutLogo, DignitariesSection } from './AboutSection';
 import Footer from '../../components/Footer';
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <BentoGrid />
+      <IdentitySection />
+      <AboutLogo />
+      <DignitariesSection />
+      <WingsSection />
       <Footer />
     </>
   );
