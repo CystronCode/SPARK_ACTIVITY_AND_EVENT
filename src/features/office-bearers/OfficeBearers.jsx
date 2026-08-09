@@ -78,7 +78,7 @@ const coreTeam = [
     role: 'Joint Secretary',
     dept: 'Mechanical Engineering',
     email: 'chinmayidevihn.me24@rvce.edu.in',
-    photo: '/images/team/Chinmayi Devi H N .png',
+    photo: '/images/team/Chinmayi Devi H N .jpeg',
     linkedin: 'https://www.linkedin.com/in/chinmayi-devi-h-n-149802357',
     imageClass: 'object-cover object-center scale-95',
     containerClass: 'bg-white',
