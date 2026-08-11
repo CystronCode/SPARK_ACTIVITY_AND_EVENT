@@ -58,6 +58,7 @@ function AppContent() {
   );
 }
 
+<<<<<<< HEAD
 function App() {
   return (
     <BrowserRouter>
@@ -66,4 +67,6 @@ function App() {
   );
 }
 
+=======
+>>>>>>> ec8c749 (Add 2023 events and activities)
 export default App;

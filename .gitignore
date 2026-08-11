@@ -25,3 +25,5 @@ dist-ssr
 
 *.tgz
 
+
+npm_cli/
