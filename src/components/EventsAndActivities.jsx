@@ -245,12 +245,7 @@ const EventsAndActivities = () => {
                 {/* Card Content Body */}
                 <div className="p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    {event.location && (
-                      <div className="flex items-center gap-1 text-slate-400 text-xs font-medium mb-2">
-                        <MapPin size={12} className="text-sparkGreen" />
-                        <span>{event.location}</span>
-                      </div>
-                    )}
+                   
                     <h3 className="text-xl font-black text-sparkBlue group-hover:text-sparkAccent transition-colors duration-200 mb-3 leading-snug">
                       {event.title}
                     </h3>
@@ -429,12 +424,7 @@ const EventsAndActivities = () => {
                       </div>
                     </div>
 
-                    {activeEventModal.location && (
-                      <div className="flex items-center gap-1.5 text-slate-600 text-sm font-medium bg-slate-100 px-3 py-1 rounded-full">
-                        <MapPin size={14} className="text-sparkGreen" />
-                        <span>{activeEventModal.location}</span>
-                      </div>
-                    )}
+                
                   </div>
 
                   {/* Title & Full Description */}
