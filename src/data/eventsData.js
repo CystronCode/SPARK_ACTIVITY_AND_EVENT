@@ -326,25 +326,7 @@ export const eventsByYear = {
         speakers: ["Faculty Leaders & Student Club Presidents"],
         stats: { views: "1,900+ Views", episodes: "6+ Recorded", reach: "Campus-wide" }
       },
-      {
-        id: "kaiga-atomic-visit-2025",
-        title: "Kaiga Nuclear Power Plant Industrial Tour",
-        tag: "Industrial Visits",
-        date: "15th March 2025",
-        location: "Kaiga, Karnataka",
-        shortDesc: "Industrial visit to Kaiga Atomic Power Station studying nuclear energy systems, reactor safety, and power grid distribution.",
-        fullDesc: "A specialized industrial visit to the Kaiga Nuclear Power Plant in Uttara Kannada. Students gained firsthand insights into nuclear reactor operations, heavy water coolant systems, radiological safety protocols, and large-scale power generation.",
-        images: [
-          "/kaalnirnay.png"
-        ],
-        highlights: [
-          "Technical walkthrough of nuclear reactor control systems",
-          "Safety protocols and environmental monitoring protocols",
-          "Q&A session with Nuclear Power Corporation of India (NPCIL) engineers"
-        ],
-        speakers: ["NPCIL Senior Nuclear Engineers"],
-        stats: { site: "Kaiga Atomic Power Station", type: "Energy Engineering" }
-      }
+      
     ]
   },
   2026: {
