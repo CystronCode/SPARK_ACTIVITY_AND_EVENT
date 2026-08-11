@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Reveal from '../../components/Reveal';
 import Footer from '../../components/Footer';
 
 /* ════════════════════════════════════════════════════════════
-   OFFICE BEARERS DATA (2024-25)
+   OFFICE BEARERS DATA (2026)
 ════════════════════════════════════════════════════════════ */
 
 // Chairman
@@ -22,15 +22,15 @@ const facultyAdvisors = [
   {
     name: 'Dr. K.S. Geetha',
     role: 'Faculty Advisor',
-    designation: 'Vice Principal, RV College of Engineering',
+    designation: 'Vice Principal, RVCE',
     photo: '/images/vp.jpeg',
     email: 'geethaks@rvce.edu.in',
     linkedin: 'https://www.linkedin.com/',
   },
   {
-    name: 'Dr. Shanmukha N',
+    name: 'Dr. Shanmukha Nagaraj',
     role: 'Faculty Advisor',
-    designation: 'Head of Department, Mechanical Engineering',
+    designation: 'HoD, Mechanical Dept.',
     photo: '/images/dean.jpg',
     email: 'shanmukhan@rvce.edu.in',
     linkedin: 'https://www.linkedin.com/',
@@ -41,7 +41,7 @@ const facultyAdvisors = [
 const facultyCoordinator = {
   name: 'Dr. Prapulla S B',
   role: 'Faculty Coordinator',
-  designation: 'Associate Professor, Computer science and Enginnering ',
+  designation: 'Assistant Professor, CSE',
   photo: '/images/psb.jpg',
   email: 'prapullasb@rvce.edu.in',
   linkedin: 'https://www.linkedin.com/',
@@ -52,7 +52,7 @@ const coreTeam = [
   {
     name: 'Kavin Krishnan C',
     role: 'President',
-    dept: 'Computer science and Enginnering',
+    dept: 'CSE',
     email: 'kavinkrishnanc.cs24@rvce.edu.in',
     photo: '/images/team/Kavin_SPARK.png',
     linkedin: 'https://www.linkedin.com/in/kavin-krishnan-c-72024k',
@@ -60,7 +60,7 @@ const coreTeam = [
   {
     name: 'A S S S Koundinya',
     role: 'Vice President',
-    dept: 'Computer science and Enginnering',
+    dept: 'CSE',
     email: 'assskoundinya.cs24@rvce.edu.in',
     photo: '/images/team/ASSS_Koundinya.jpg',
     linkedin: 'https://www.linkedin.com/in/a-s-s-s-koundinya-387a6b33a',
@@ -68,7 +68,7 @@ const coreTeam = [
   {
     name: 'Parinitha M',
     role: 'Secretary',
-    dept: 'Computer science and Enginnering',
+    dept: 'CSE',
     email: 'parinitham.cs24@rvce.edu.in',
     photo: '/images/team/ParinithaM (2).jpeg',
     linkedin: 'https://www.linkedin.com/in/parinitha-m-b8132b377',
@@ -96,12 +96,12 @@ const coreTeam = [
 // Verticals & Wing Heads Data (With Exact LinkedIn URLs)
 const verticalsData = [
   {
-    title: 'Activities & Events',
+    title: 'Activities and Events',
     heads: [
       {
         name: 'Manyashree S',
         role: 'Wing Head',
-        dept: 'Information Science and Engineering',
+        dept: 'ISE',
         email: 'manyashrees.is24@rvce.edu.in',
         photo: '/images/team/Manyashree_S.jpeg',
         linkedin: 'https://www.linkedin.com/in/manyashree-s-828760356',
@@ -109,7 +109,7 @@ const verticalsData = [
       {
         name: 'Vindhya Karanth',
         role: 'Wing Head',
-        dept: 'Information Science and Engineering',
+        dept: 'ISE',
         email: 'vindhyakaranth.is24@rvce.edu.in',
         photo: '/images/team/Vindhya_K.JPG',
         linkedin: 'https://www.linkedin.com/in/vindhya-karanth-08164636b',
@@ -139,12 +139,12 @@ const verticalsData = [
     ],
   },
   {
-    title: "Industrial Connect and People's Operations",
+    title: 'Industrial Connect and People Operations',
     heads: [
       {
         name: 'Dakshraj Shetty',
         role: 'Wing Head',
-        dept: 'Electronics and Communication Engineering',
+        dept: 'ECE',
         email: 'dakshrajshetty.ec24@rvce.edu.in',
         photo: '/images/team/Dakshraj Shetty .jpg',
         linkedin: 'https://www.linkedin.com/in/dakshraj-shetty-752338370',
@@ -153,7 +153,7 @@ const verticalsData = [
     members: ['member1', 'member2'],
   },
   {
-    title: 'Projects, Research & Development (P, R & D)',
+    title: 'Projects, Research and Development',
     heads: [
       {
         name: 'Monish Gangadharan',
@@ -166,7 +166,7 @@ const verticalsData = [
       {
         name: 'Yashwanth S',
         role: 'Wing Head',
-        dept: 'Electronics and Communication Engineering',
+        dept: 'ECE',
         email: 'yashwanths.ec24@rvce.edu.in',
         photo: '/images/team/Yashwanth S.jpg',
         linkedin: 'https://www.linkedin.com/in/yashwanth-s-537b6b279',
@@ -175,7 +175,7 @@ const verticalsData = [
     members: ['member1', 'member2'],
   },
   {
-    title: 'Social Media Wing',
+    title: 'Social Media',
     heads: [
       {
         name: 'Banda Partha Sarathi',
@@ -188,7 +188,7 @@ const verticalsData = [
       {
         name: 'Pranav T M',
         role: 'Wing Head',
-        dept: 'Computer Science and Enginnering',
+        dept: 'CSE',
         email: 'pranavtm.cs24@rvce.edu.in',
         photo: '/images/team/pranavtm.jpg',
         linkedin: 'https://www.linkedin.com/in/pranavtm',
@@ -233,7 +233,7 @@ const verticalsData = [
       {
         name: 'Mansi Rai',
         role: 'Wing Head',
-        dept: 'Computer Science and Engineering',
+        dept: 'CSE',
         email: 'mansirai.cs24@rvce.edu.in',
         photo: '/images/team/MansiRai.jpeg',
         linkedin: 'https://www.linkedin.com/in/mansi-rai-587ab6371',
@@ -257,50 +257,144 @@ const verticalsData = [
 ];
 
 /* ════════════════════════════════════════════════════════════
+   PREVIOUS LEADERSHIP TEAMS DATA (STANDARDIZED NAMES & SORTED)
+════════════════════════════════════════════════════════════ */
+const previousYearsData = [
+  {
+    yearKey: '2025',
+    yearLabel: '2025',
+    coreTeam: [
+      { role: 'President', name: 'Prathik P Kekare', dept: 'ECE' },
+      { role: 'Vice-President', name: 'Rupini Hulikatti', dept: 'IEM' },
+      { role: 'Secretary', name: 'R Sunidhi', dept: 'ECE' },
+      { role: 'Joint Secretary', name: 'Prajwal Jathanna', dept: 'ECE' },
+      { role: 'Treasurer', name: 'Tejas Math', dept: 'ECE' },
+    ],
+    wings: [
+      {
+        title: 'Activities and Events',
+        heads: [{ name: 'Dhruthi Rudrangi', dept: 'ISE' }],
+      },
+      {
+        title: 'Industrial Connect and People Operations',
+        heads: [
+          { name: 'Aaditya Raj', dept: 'CSE(CY)' },
+          { name: 'Harshit Saroha', dept: 'ETE' },
+        ],
+      },
+      {
+        title: 'Projects, Research and Development',
+        heads: [{ name: 'Shriyansh Agarwal', dept: 'CSE(CY)' }],
+      },
+      {
+        title: 'Social Media',
+        heads: [
+          { name: 'Sachin Gowda', dept: 'EEE' },
+          { name: 'Vijaylaxmi Patil', dept: 'EIE' },
+        ],
+      },
+      {
+        title: 'Women Empowerment',
+        heads: [{ name: 'Aarushi Das', dept: 'BT' }],
+      },
+    ],
+  },
+  {
+    yearKey: '2024',
+    yearLabel: '2024',
+    coreTeam: [
+      { role: 'President', name: 'Ashok R' },
+      { role: 'Vice-President', name: 'Nikitha Sunil' },
+      { role: 'Secretary', name: 'Jigyasa Agarwaal' },
+      { role: 'Treasurer', name: 'Harsh Gupta' },
+    ],
+    wings: [
+      {
+        title: 'Activities and Events',
+        heads: [{ name: 'Abhishek Saraff' }],
+      },
+      {
+        title: 'Industrial Connect and People Operations',
+        heads: [{ name: 'Adarsh Shrivatsava' }, { name: 'Poornachandra' }],
+      },
+      {
+        title: 'Projects, Research and Development',
+        heads: [{ name: 'Abhishek S' }, { name: 'Yashwanth S' }],
+      },
+      {
+        title: 'Social Media',
+        heads: [{ name: 'Gayatri Venkatesh' }],
+      },
+      {
+        title: 'Women Empowerment',
+        heads: [{ name: 'Nikitha Sunil' }],
+      },
+    ],
+  },
+  {
+    yearKey: '2023',
+    yearLabel: '2023',
+    coreTeam: [
+      { role: 'President', name: 'Suraj R S' },
+      { role: 'Vice-President', name: 'Inchara N Aradhya' },
+      { role: 'Secretary', name: 'Shankaramma' },
+      { role: 'Treasurer', name: 'Vaibhavi Mokashi' },
+    ],
+    wings: [
+      {
+        title: 'Activities and Events',
+        heads: [{ name: 'Rakshith C M' }, { name: 'Varshith K Battikoppad' }],
+      },
+      {
+        title: 'Industrial Connect and People Operations',
+        heads: [{ name: 'Gohitha Maheshwari J' }, { name: 'Shruthishree S' }],
+      },
+      {
+        title: 'Projects, Research and Development',
+        heads: [
+          { name: 'Chaitanya Dev Sahdev' },
+          { name: 'Krish Dhankar' },
+          { name: 'Mohit Chikkadi' },
+          { name: 'Prajwal G Angadi' },
+        ],
+      },
+      {
+        title: 'Social Media',
+        heads: [{ name: 'Mukul G Kulkarni' }, { name: 'Sahana Vaddi' }],
+      },
+      {
+        title: 'Women Empowerment',
+        heads: [{ name: 'Soundarya Das' }, { name: 'Varshini G S' }],
+      },
+    ],
+  },
+];
+
+/* ════════════════════════════════════════════════════════════
    UNIFORM CARD COMPONENTS (FIXED DIMENSIONS & ICONS)
 ════════════════════════════════════════════════════════════ */
 
 // Faculty Large Card (Chairman, Faculty Advisors, Faculty Coordinator)
-const FeaturedCard = ({ name, designation, photo }) => {
-  const [desigTitle, ...orgParts] = designation.split(',');
-
-  return (
-    <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 w-[280px] sm:w-[300px] md:w-[320px] h-[390px] flex flex-col justify-between shrink-0">
-      <div className="h-64 w-full bg-gradient-to-br from-sparkBlue via-sparkBlue/90 to-sparkLightBlue relative overflow-hidden shrink-0">
-        <img
-          src={photo}
-          alt={name}
-          className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-          onError={(e) => { e.target.style.display = 'none'; }}
-        />
-      </div>
-      <div className="p-5 text-center flex-1 flex flex-col justify-center items-center">
-        <h3 className="text-xl md:text-2xl font-black text-sparkBlue mb-1 tracking-tight leading-tight line-clamp-1">{name}</h3>
-        <p className="text-slate-700 font-bold text-sm md:text-base leading-snug line-clamp-1">{desigTitle.trim()}</p>
-        {orgParts.length > 0 && (
-          <div className="flex flex-col items-center mt-0.5 gap-0.5">
-            {orgParts.map((part, idx) => (
-              <p
-                key={idx}
-                className={
-                  idx === orgParts.length - 1 && part.trim().toLowerCase().includes('rv college')
-                    ? "text-sparkAccent font-semibold text-[11px] uppercase tracking-wider mt-0.5"
-                    : "text-sparkAccent font-semibold text-xs md:text-sm"
-                }
-              >
-                {part.trim()}
-              </p>
-            ))}
-          </div>
-        )}
-      </div>
+const FeaturedCard = ({ name, designation, photo }) => (
+  <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 w-[280px] sm:w-[300px] md:w-[320px] h-[370px] flex flex-col justify-between shrink-0">
+    <div className="h-64 w-full bg-gradient-to-br from-sparkBlue via-sparkBlue/90 to-sparkLightBlue relative overflow-hidden shrink-0">
+      <img
+        src={photo}
+        alt={name}
+        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+        onError={(e) => { e.target.style.display = 'none'; }}
+      />
     </div>
-  );
-};
+    <div className="p-5 text-center flex-1 flex flex-col justify-center items-center">
+      <h3 className="text-xl md:text-2xl font-black text-sparkBlue mb-1 leading-snug line-clamp-1">{name}</h3>
+      <p className="text-slate-500 font-semibold text-sm md:text-base line-clamp-1">{designation}</p>
+    </div>
+  </div>
+);
 
 // Uniform Member Card (Core Team & Wing Heads)
 const MemberCard = ({ name, role, dept, photo, email, linkedin, imageClass, containerClass }) => (
-  <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 w-[280px] sm:w-[300px] md:w-[320px] h-[430px] flex flex-col justify-between shrink-0">
+  <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 w-[280px] sm:w-[295px] md:w-[300px] h-[410px] flex flex-col justify-between shrink-0">
     {/* Image container fixed height */}
     <div className={`h-60 w-full relative overflow-hidden shrink-0 flex items-center justify-center ${containerClass || 'bg-gradient-to-br from-sparkBlue via-sparkBlue/90 to-sparkLightBlue'}`}>
       <img
@@ -314,13 +408,13 @@ const MemberCard = ({ name, role, dept, photo, email, linkedin, imageClass, cont
     {/* Text body fixed layout */}
     <div className="p-5 text-center flex-1 flex flex-col justify-between items-center">
       <div className="w-full">
-        {/* Name */}
+        {/* Bold Big Position / Role */}
         <h4 className="text-xl md:text-2xl font-black text-sparkBlue mb-1 tracking-tight leading-tight line-clamp-1">
-          {name}
-        </h4>
-        {/* Role and Department */}
-        <p className="text-slate-700 font-bold text-sm md:text-base leading-snug line-clamp-1">
           {role}
+        </h4>
+        {/* Name and Department */}
+        <p className="text-slate-700 font-bold text-sm md:text-base leading-snug line-clamp-1">
+          {name}
         </p>
         {dept && (
           <p className="text-sparkAccent font-semibold text-xs md:text-sm mt-0.5">
@@ -356,10 +450,51 @@ const MemberCard = ({ name, role, dept, photo, email, linkedin, imageClass, cont
   </div>
 );
 
+// Name Plate Card for Previous Members (Slightly larger for Core Team, Standard for Wing Heads)
+const NamePlateCard = ({ role, name, dept, isCore }) => (
+  <div
+    className={`group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between shrink-0 ${
+      isCore ? 'w-[250px] sm:w-[275px] h-[130px]' : 'w-[210px] sm:w-[235px] h-[110px]'
+    }`}
+  >
+    {/* Blue Cap Top Banner */}
+    <div
+      className={`bg-sparkBlue text-white font-bold uppercase tracking-wider text-center border-b border-sparkLightBlue/40 truncate shrink-0 ${
+        isCore ? 'text-xs py-2.5 px-4' : 'text-[11px] py-2 px-3'
+      }`}
+    >
+      {role}
+    </div>
+    {/* White Body */}
+    <div className="p-3 text-center flex-1 flex flex-col justify-center items-center">
+      <h5
+        className={`font-black text-sparkBlue leading-tight group-hover:text-sparkAccent transition-colors line-clamp-1 ${
+          isCore ? 'text-base sm:text-lg' : 'text-sm sm:text-base'
+        }`}
+      >
+        {name}
+      </h5>
+      {dept && (
+        <span
+          className={`inline-block mt-1 font-semibold text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-full border border-slate-200/60 shrink-0 ${
+            isCore ? 'text-xs' : 'text-[11px]'
+          }`}
+        >
+          {dept}
+        </span>
+      )}
+    </div>
+  </div>
+);
+
 /* ════════════════════════════════════════════════════════════
    OFFICE BEARERS PAGE COMPONENT
 ════════════════════════════════════════════════════════════ */
 const OfficeBearers = () => {
+  const [activeYearKey, setActiveYearKey] = useState('2025');
+
+  const selectedYearData = previousYearsData.find((y) => y.yearKey === activeYearKey);
+
   return (
     <>
       {/* Hero Banner — Title ONLY */}
@@ -490,6 +625,88 @@ const OfficeBearers = () => {
               </div>
             </div>
           ))}
+        </section>
+
+        {/* ════════════════════════════════════════════════════════════
+           NEW SECTION: PREVIOUS LEADERSHIP TEAMS (ARCHIVES)
+        ════════════════════════════════════════════════════════════ */}
+        <section className="w-full px-6 md:px-12 xl:px-20 py-16 border-t-2 border-slate-200/60 bg-slate-100/50">
+          <div className="max-w-screen-xl mx-auto">
+            
+            <Reveal>
+              <div className="text-center mb-10">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-sparkBlue tracking-tight mb-3">
+                  Previous Leadership Teams
+                </h2>
+              </div>
+            </Reveal>
+
+            {/* Academic Year Tab Selector Switcher (Labeled 2025, 2024, 2023) */}
+            <Reveal delay={0.1}>
+              <div className="flex justify-center mb-12">
+                <div className="inline-flex p-1.5 bg-white rounded-2xl shadow-md border border-slate-200 gap-1.5 sm:gap-2">
+                  {previousYearsData.map((y) => {
+                    const isActive = y.yearKey === activeYearKey;
+                    return (
+                      <button
+                        key={y.yearKey}
+                        onClick={() => setActiveYearKey(y.yearKey)}
+                        className={`px-6 py-2.5 rounded-xl font-bold text-sm sm:text-base transition-all duration-300 ${
+                          isActive
+                            ? 'bg-sparkBlue text-white shadow-md scale-105'
+                            : 'text-slate-600 hover:text-sparkBlue hover:bg-slate-50'
+                        }`}
+                      >
+                        {y.yearLabel}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </Reveal>
+
+            {/* Selected Year Content */}
+            {selectedYearData && (
+              <motion.div
+                key={selectedYearData.yearKey}
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                className="space-y-8"
+              >
+                {/* Previous Core Team Box */}
+                <div className="bg-white/80 rounded-2xl p-5 md:p-6 border border-slate-200/80 shadow-sm max-w-5xl mx-auto">
+                  <h4 className="text-center font-black text-sparkBlue text-base sm:text-lg uppercase tracking-wider mb-5 pb-2 border-b border-slate-100">
+                    Core Team
+                  </h4>
+                  <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
+                    {selectedYearData.coreTeam.map((m, idx) => (
+                      <NamePlateCard key={idx} role={m.role} name={m.name} dept={m.dept} isCore={true} />
+                    ))}
+                  </div>
+                </div>
+
+                {/* Previous Wing Heads — Grouped by Wing Box */}
+                {selectedYearData.wings.map((wing) => (
+                  <div
+                    key={wing.title}
+                    className="bg-white/80 rounded-2xl p-5 md:p-6 border border-slate-200/80 shadow-sm max-w-5xl mx-auto"
+                  >
+                    <h4 className="text-center font-black text-sparkBlue text-base sm:text-lg uppercase tracking-wider mb-5 pb-2 border-b border-slate-100">
+                      {wing.title}
+                    </h4>
+                    <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
+                      {wing.heads.map((head, idx) => (
+                        <NamePlateCard key={idx} role="Wing Head" name={head.name} dept={head.dept} isCore={false} />
+                      ))}
+                    </div>
+                  </div>
+                ))}
+
+              </motion.div>
+            )}
+
+          </div>
         </section>
 
       </div>
