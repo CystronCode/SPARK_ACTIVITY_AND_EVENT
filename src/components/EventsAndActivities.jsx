@@ -151,7 +151,13 @@ const EventsAndActivities = () => {
                     <span className={`mt-3 text-xs font-bold tracking-wider uppercase ${
                       isSelected ? 'text-sparkBlue' : 'text-slate-400'
                     }`}>
-                      {y === '2025' ? '14 Events' : y === '2026' ? 'Upcoming' : 'Archive'}
+                      {y === '2023'
+                         ? '8 Events'
+                       : y === '2025'
+                        ? '14 Events'
+                        : y === '2026'
+                        ? 'Upcoming'
+                        : 'Archive'}
                     </span>
                   </div>
                 );

@@ -4,27 +4,302 @@
 export const annualReportPdf = "/Annual_Report_2025.pdf";
 
 export const eventsByYear = {
-  2023: {
-    year: "2023",
-    tagline: "Foundational Projects & Initial Milestones",
-    description: "The 2023 academic year focused on establishing core project learning workflows and inaugural workshop series.",
-    status: "placeholder",
-    events: [
-      {
-        id: "2023-placeholder-1",
-        title: "2023 Activity Record (Pending)",
-        tag: "Archived",
-        date: "2023 Academic Year",
-        location: "RVCE Campus",
-        shortDesc: "This section is reserved for the 2023 SPARK team members to populate event archives and project media.",
-        fullDesc: "The 2023 event entries are currently open for contribution. Respective team leaders can update this entry in `src/data/eventsData.js` with event titles, dates, descriptions, and media links.",
-        images: ["/hero.png"],
-        highlights: ["Project-based learning introduction", "Technical workshops", "Inter-departmental collaboration"],
-        speakers: ["SPARK 2023 Core Team"],
-        stats: { participants: "200+", sessions: "6", projects: "10+" }
-      }
-    ]
-  },
+ 2023: {
+  year: "2023",
+
+  tagline: "A Year of Learning, Impact & Innovation",
+
+  description:
+    "A collection of SPARK activities, industry visits, talks, competitions and outreach initiatives conducted throughout 2023.",
+
+  status: "active",
+
+  events: [
+    {
+      id: "spark-inaugural-2023",
+
+      title: "SPARK Inaugural Ceremony",
+
+      tag: "Ceremony",
+
+      date: "14 February 2023",
+
+      location: "RVCE Campus",
+
+      shortDesc:
+        "The inaugural ceremony marked an important beginning for SPARK, bringing together initiatives focused on learning, innovation, sustainability, social awareness and holistic development.",
+
+      fullDesc:
+        "The SPARK Inaugural Ceremony introduced a range of initiatives aimed at holistic student development and practical learning. The year's activities included expert talks, industry visits, women empowerment initiatives, project-based learning, SDG competitions, entrepreneurship activities and The Insight podcast.",
+
+      images: [
+        "/events_2023/inaugural/20230214_153416.jpg",
+        "/events_2023/inaugural/IMG_1.jpg",
+        "/events_2023/inaugural/IMG_4156.jpg"
+      ],
+
+      highlights: [
+        "Launch of SPARK initiatives for the academic year",
+        "Focus on holistic student development",
+        "Practical learning and innovation",
+        "Sustainability and social awareness"
+      ],
+
+      speakers: [],
+
+      stats: {}
+    },
+
+
+    {
+      id: "environment-day-2023",
+
+      title: "Environment Day",
+
+      tag: "Environment & Sustainability",
+
+      date: "6 May 2023",
+
+      location: "RVCE Campus",
+
+      shortDesc:
+        "A World Environment Day initiative centred around environmental awareness and the #BeatPlasticPollution theme.",
+
+      fullDesc:
+        "The Environment Day activity encouraged students to engage with environmental issues through a quiz centred around the theme #BeatPlasticPollution.",
+
+      images: [
+  "/events_2023/environment-day/img__1.jpg",
+  "/events_2023/environment-day/img_2.jpg"
+     ],
+
+      highlights: [
+        "World Environment Day initiative",
+        "#BeatPlasticPollution theme",
+        "Environmental awareness",
+        "Student participation through a quiz"
+      ],
+
+      speakers: [],
+
+      stats: {}
+    },
+
+
+    {
+      id: "raichur-industry-visit-2023",
+
+      title: "Industry Visit to Raichur",
+
+      tag: "Industry Visit",
+
+      date: "29 June 2023",
+
+      location: "Yeramarus Thermal Power Station & Raichur Thermal Power Station",
+
+      shortDesc:
+        "An industrial visit providing students with exposure to thermal power generation and real-world industrial operations.",
+
+      fullDesc:
+        "Students visited Yeramarus Thermal Power Station (YTPS) and Raichur Thermal Power Station (RTPS), gaining practical exposure to industrial environments and thermal power generation.",
+
+      images: [
+  "/events_2023/raichur/image.png",
+  "/events_2023/raichur/Screenshot 2026-08-10 194047.png",
+  "/events_2023/raichur/Screenshot 2026-08-10 194111.png"
+],
+      highlights: [
+        "Industrial exposure",
+        "Visit to YTPS",
+        "Visit to RTPS",
+        "Practical understanding of power generation"
+      ],
+
+      speakers: [],
+
+      stats: {}
+    },
+
+
+    {
+      id: "sdg-2023",
+
+      title: "SDG",
+
+      tag: "Competition",
+
+      date: "7 August 2023",
+
+      location: "RVCE",
+
+      shortDesc:
+        "A photography competition encouraging students to explore and represent the United Nations Sustainable Development Goals through visual storytelling.",
+
+      fullDesc:
+        "The SDG activity featured a two-round photography competition centred around the United Nations Sustainable Development Goals. Students used photography to creatively communicate ideas connected to sustainable development.",
+
+      images: [
+        "/events_2023/sdg/123.jpg",
+  "/events_2023/sdg/243.png"
+      ],
+
+      highlights: [
+        "Two-round photography competition",
+        "United Nations Sustainable Development Goals",
+        "Creative visual storytelling",
+        "Student participation and awareness"
+      ],
+
+      speakers: [],
+
+      stats: {}
+    },
+
+
+    {
+      id: "success-knowing-thyself-2023",
+
+      title: "Success is Knowing Thyself",
+
+      tag: "Women Empowerment",
+
+      date: "20 August 2023",
+
+      location: "RVCE",
+
+      shortDesc:
+        "A Women Empowerment Wing initiative focused on self-awareness, personal growth and understanding one's own strengths.",
+
+      fullDesc:
+        "The Women Empowerment Wing organised the 'Success is Knowing Thyself' talk with Dr. Geetha, focusing on self-awareness and personal development.",
+
+      images: [
+        "/events_2023/knowing-thyself/20230620_144858.jpg",
+  "/events_2023/knowing-thyself/imgg_1.JPG"
+      ],
+
+      highlights: [
+        "Women Empowerment Wing initiative",
+        "Focus on self-awareness",
+        "Personal growth and confidence",
+        "Interactive learning through a talk"
+      ],
+
+      speakers: [
+        "Dr. Geetha"
+      ],
+
+      stats: {}
+    },
+
+
+    {
+      id: "nexgen-entrepreneurship-2023",
+
+      title: "NexGen Entrepreneurship Talk",
+
+      tag: "Entrepreneurship",
+
+      date: "29 August 2023",
+
+      location: "RVCE",
+
+      shortDesc:
+        "An entrepreneurship-focused talk on developing an entrepreneurial mindset and nurturing emerging entrepreneurs.",
+
+      fullDesc:
+        "The NexGen Entrepreneurship Talk featured Dr. Amit from Marwadi University, Rajkot. The session focused on developing an entrepreneurial mindset and encouraging students to explore entrepreneurship.",
+
+      images: [
+        "/events_2023/nexgen/nexgen2.jpeg",
+  "/events_2023/nexgen/nexgen3.jpeg"
+      ],
+
+      highlights: [
+        "Entrepreneurial mindset",
+        "Nurturing emerging entrepreneurs",
+        "Entrepreneurship awareness",
+        "Expert interaction"
+      ],
+
+      speakers: [
+        "Dr. Amit, Marwadi University, Rajkot"
+      ],
+
+      stats: {}
+    },
+
+
+    {
+      id: "mysore-industry-visit-2023",
+
+      title: "Industry Visit to Mysore",
+
+      tag: "Industry Visit",
+
+      date: "31 August 2023",
+
+      location: "Infosys Mysore Campus",
+
+      shortDesc:
+        "An industry visit that gave students exposure to a professional technology environment and insights into careers, innovation and industry practices.",
+
+      fullDesc:
+        "Students visited the Infosys Mysore Campus and gained industry exposure through interaction with professionals, a campus tour and insights into technology, career opportunities, innovation and professional growth.",
+
+      images: [
+        "/events_2023/mysore/image.png",
+  "/events_2023/mysore/Screenshot 2026-08-10 193113.png"
+      ],
+
+      highlights: [
+        "Industry exposure",
+        "Infosys Mysore Campus visit",
+        "Interaction with professionals",
+        "Technology and career insights"
+      ],
+
+      speakers: [],
+
+      stats: {}
+    },
+
+
+    {
+      id: "shakti-shiksha-2023",
+
+      title: "Shakti Shiksha",
+
+      tag: "Social Outreach",
+
+      date: "23 December 2023",
+
+      location: "Gurukula Vidyapeeth",
+
+      shortDesc:
+        "A social outreach initiative focusing on health, hygiene, career guidance, self-confidence and empowerment.",
+
+      fullDesc:
+        "Shakti Shiksha was a social outreach initiative designed to create awareness around health and hygiene while providing career guidance and encouraging self-confidence and empowerment.",
+
+      images: [
+        "/events_2023/shakti-shiksha/20231223_141000.jpg",
+  "/events_2023/shakti-shiksha/20231223_141628.jpg"
+      ],
+
+      highlights: [
+        "Health and hygiene awareness",
+        "Career guidance",
+        "Self-confidence and empowerment",
+        "Community outreach"
+      ],
+
+      speakers: [],
+
+      stats: {}
+    }
+  ]
+},
   2024: {
     year: "2024",
     tagline: "Expanding Reach & Industry Connections",
