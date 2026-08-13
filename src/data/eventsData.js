@@ -61,7 +61,7 @@ export const eventsByYear = {
       {
         id: "iasf-2024",
         title: "IASF-25",
-        tag: "National Forum",
+        tag: "Events & Competitions",
         date: "31st January 2024",
         location: "National Event",
         shortDesc: "Final yearly chapter presentation at IUCEE Annual Student Forum.",
@@ -75,7 +75,7 @@ export const eventsByYear = {
       {
         id: "aavishkar-manthan-2024",
         title: "AAVISHKAR MANTHAN-2024",
-        tag: "Ideathon",
+        tag: "Events & Competitions",
         date: "1st – 2nd March 2024",
         location: "Malnad, Karnataka",
         shortDesc: "A visit to Malnad featuring elocution and ideation events focused on SDG solutions.",
@@ -90,7 +90,7 @@ export const eventsByYear = {
       {
         id: "empowher-2024",
         title: "EmpowHer – Women's Day",
-        tag: "Empowerment",
+        tag: "Outreach & Impact",
         date: "7th March 2024",
         location: "RVCE Campus",
         shortDesc: "An event held on the occasion of Women's Day celebrating women leaders in tech.",
@@ -104,7 +104,7 @@ export const eventsByYear = {
       {
         id: "icf-visit-2024",
         title: "Integral Coach Factory (ICF) Visit",
-        tag: "Industrial Visit",
+        tag: "Outreach & Impact",
         date: "17th & 24th May 2024",
         location: "Chennai, Tamil Nadu",
         shortDesc: "Students visited the Integral Coach Factory gaining firsthand exposure to railway coach manufacturing and advanced fabrication.",
@@ -118,7 +118,7 @@ export const eventsByYear = {
       {
         id: "run-for-wind-2024",
         title: "Run for Wind Marathon",
-        tag: "Social Impact",
+        tag: "Outreach & Impact",
         date: "5th June 2024",
         location: "Bengaluru",
         shortDesc: "Students actively supported KREDL's 4 km 'Run for Wind' marathon, promoting awareness of renewable energy.",
@@ -133,7 +133,7 @@ export const eventsByYear = {
       {
         id: "aunsf-2024",
         title: "AUNSF 2.0-2024",
-        tag: "Ideathon",
+        tag: "Events & Competitions",
         date: "June 2024",
         location: "Hyderabad",
         shortDesc: "A visit to Hyderabad featuring an intensive 3-level ideathon at AUNSF 2.0.",
@@ -147,7 +147,7 @@ export const eventsByYear = {
       {
         id: "mini-anveshana-2024",
         title: "MINI-ANVESHANA",
-        tag: "Competition",
+        tag: "Events & Competitions",
         date: "25th October 2024",
         location: "RVCE Campus",
         shortDesc: "Idea-presentation event promoting SDG innovation among 1st & 2nd year students.",
@@ -160,7 +160,7 @@ export const eventsByYear = {
       {
         id: "sdg-photography-2024",
         title: "SDG 2024 (Through the Eyes of You(th))",
-        tag: "Photography",
+        tag: "Events & Competitions",
         date: "12th November 2024",
         location: "RVCE Campus",
         shortDesc: "A two-round photography competition promoting awareness of the UN SDGs through creative visual storytelling.",
@@ -174,7 +174,7 @@ export const eventsByYear = {
       {
         id: "linkedin-session-2024",
         title: "LinkedIn Session",
-        tag: "Skill Development",
+        tag: "Learning & Development",
         date: "28th November 2024",
         location: "IEM Auditorium, RVCE",
         shortDesc: "Hosted a LinkedIn session attended by 60 first-year students with SPARK 2022 batch alumni sharing insights.",
@@ -188,7 +188,7 @@ export const eventsByYear = {
       {
         id: "shakti-shiksha-2024",
         title: "SHAKTI SHIKSHA",
-        tag: "Social Impact",
+        tag: "Outreach & Impact",
         date: "23rd December 2024",
         location: "Community Outreach",
         shortDesc: "Women Empowerment Wing event dedicated to promoting health and hygiene awareness along with career guidance.",
@@ -201,7 +201,7 @@ export const eventsByYear = {
       {
         id: "prashansotsava-2024",
         title: "PRASHANSOTSAVA",
-        tag: "Recognition",
+        tag: "Events & Competitions",
         date: "12th January 2024",
         location: "RVCE Campus",
         shortDesc: "SPARK proudly hosted PRASHANSOTSAVA, a celebration of appreciation dedicated to recognizing the remarkable achievements at IASF 2024.",
@@ -214,7 +214,7 @@ export const eventsByYear = {
       {
         id: "pratham-tejasotsavam-2024",
         title: "Pratham Tejasotsavam",
-        tag: "Celebration",
+        tag: "Events & Competitions",
         date: "14th February 2024",
         location: "RVCE Campus",
         shortDesc: "Marking a year of achievements, collaboration, and dedication to student-led innovation.",
@@ -227,7 +227,7 @@ export const eventsByYear = {
       {
         id: "isro-sdsc-visit-2024",
         title: "Satish Dhawan Space Centre Visit (ISRO)",
-        tag: "Industrial Visit",
+        tag: "Outreach & Impact",
         date: "19th March 2024",
         location: "Sriharikota",
         shortDesc: "Visit of 104 students from SPARK to Satish Dhawan Space Centre, Sriharikota - a highly enriching experience.",
@@ -240,7 +240,7 @@ export const eventsByYear = {
       {
         id: "kaiga-npcil-visit-2025",
         title: "NPCIL IV 2025 - Kaiga Power Plant",
-        tag: "Industrial Visit",
+        tag: "Learning & Development",
         date: "14th – 16th March 2025",
         location: "Kaiga, Karnataka",
         shortDesc: "Visited Kaiga Nuclear Power Plant to gain firsthand exposure to nuclear energy operations and reactor safety protocols.",
